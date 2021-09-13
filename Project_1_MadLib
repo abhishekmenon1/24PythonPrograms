@@ -1,0 +1,15 @@
+'''
+1/42 -Beginner Level
+Mad Libs Generator
+
+The input could be anything, an adjective, a noun, a pronoun, etc. Once all the inputs are entered,
+ the application will take the data and arrange the inputs into a story template form
+'''
+
+name = input("Enter your name: ")
+place = input("Enter your place for Mad lib: ")
+celeb= input("Enter your celebrity for Mad lib: ")
+car = input("Enter a name of a car for Mad Lib: ")
+
+madLib = 'Hello, %s. You live in %s where people only talk about %s who always flexes his %s ' %(name, place, celeb, car)
+print(madLib)
