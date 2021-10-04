@@ -1,5 +1,5 @@
-# Everyone uses a contact book to save contact details, including name, address, phone number,
-# and even email address. This is a command-line project where you will design a contact book application
+# Everyone uses a contact book to save contact details, including name, address, phone number
+# This is a command-line project where you will design a contact book application
 # that users can use to save and find contact details.
 # The application should also allow users to update contact information, delete contacts, and list saved contacts.
 
@@ -7,7 +7,6 @@ information = list()
 Fname = []
 Lname = []
 num = []
-#email = []
 
 print("Welcome to ContactBook")
 i = 0
@@ -18,12 +17,11 @@ while i > 0:
         getFName = input("\nPerson's first name: ").upper()
         getLName = input("Person's last name: ").upper()
         getNumber = input("Person's Contact Number: ")
-        #getEmail = input("Person's email: ")
 
         Fname.append(getFName)
         Lname.append(getLName)
         num.append(getNumber)
-        #email.append(getEmail)
+
 
         print("Contact Saved!")
 
@@ -39,7 +37,6 @@ while i > 0:
             index = Fname.index(name)
             LTname = Lname[index]
             number = num[index]
-            #email = email[index]
             print("\n---------\nFirst name:", name, "\nLast Name:", LTname, "\nNumber:", number)
             enter = input("Press ENTER to go back to the menu. Hit Q to quit: ")
             if enter == "":
@@ -64,9 +61,7 @@ while i > 0:
                     del Fname[index]
                     del Lname[index]
                     del num[index]
-                    #del email[index]
-
-
+                    
             else:
                 print("Person does not exist in the directory.\n")
             enter = input("Press ENTER to go back to the menu. Hit Q to quit: ")
