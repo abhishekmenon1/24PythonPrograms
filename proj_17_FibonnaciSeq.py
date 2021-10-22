@@ -32,7 +32,7 @@ User_Input = IntVar()
 box = Entry(root, width = "30", text=User_Input)
 box.grid()
 
-inst = Label(root, text = "(Enter Year)", bg = "pink", font=("calibiri bold", 8))
+inst = Label(root, text = "(Enter Number)", bg = "pink", font=("calibiri bold", 8))
 inst.grid()
 
 Space = Label(root, text = "\n", bg="Pink", font=("calibiri bold", 14))
